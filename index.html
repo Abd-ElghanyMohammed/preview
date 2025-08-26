@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company - Products</title>
+  <link rel="stylesheet" href="styleproducts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  
+</head>
+<body>
+
+  <!-- فيديو الخلفية -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="https://videos.pexels.com/video-files/855472/855472-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="topbar">
+    <div class="container header">
+      <div class="logo">
+        <div style="width:56px;height:56px;background:#e9f2ea;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#0f6b28;font-weight:800;font-size:22px">FE</div>
+        <div>
+          <div style="font-weight:700">Company name</div>
+          <div style="font-size:13px;opacity:0.7">about us</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="navbar">
+  <div class="dropdown">
+    <a href="#" id="showAll">All Products</a>
+      
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#" id="showBatteries">product</a>
+    <div class="dropdown-content">
+      <a href="#">product</a>
+      <a href="#">product</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#" id="showInverters">product</a>
+    <div class="dropdown-content">
+      <a href="#">product </a>
+      <a href="#">product </a>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-inner">
+      <h1 class="prduct">All Products</h1>
+      <div class="breadcrumb">Home &gt; All Products</div>
+    </div>
+  </section>
+
+  
+
+
+    <section class="content">
+
+  <!-- شريط البحث + عدد النتائج -->
+ <div style="display:flex;gap:10px;align-items:center">
+  <div class="search-box" id="searchBox">
+    <input id="searchInput" placeholder="Search products">
+    <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+  </div>
+</div>
+  <!-- الكروت -->
+  <div class="grid">
+    
+   <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+   <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+    <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+     <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+    <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+     <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+     <article class="card">
+      <img class="img-inverter" src="https://irp.cdn-website.com/3fb47191/dms3rep/multi/YOUR+PRODUCT+HERE.jpg" alt="picture">
+      <div class="title">Product Name </div>
+      <div class="meta">Model</div>
+      <div class="tag">Watage</div>
+    </article>
+ <!-- لودينج -->
+    <div id="loading" style="display:none; text-align:center; margin-top:20px;">
+      <i class="fa fa-spinner fa-spin" style="font-size:28px; color:white;"></i>
+      <div style="color:white; margin-top:10px;">Loading...</div>
+    </div>
+
+    <!-- رسالة المنتج غير موجود -->
+    <div id="notFound" style="display:none; color:white; text-align:center; font-size:20px; margin-top:20px;">
+      Product Not Found
+    </div>
+</section>
+
+  <div class="float-actions" aria-hidden>
+    <a id="contact-link" href="#" target="_blank" title="Contact">
+        <i class="fa-solid fa-phone "></i>
+        <span>+20 0000-0000-0000</span>
+    </a>
+    <a href="" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp "></i>
+        <span>+20 0000-0000-0000</span>
+    </a>
+</div>
+
+  <script src="proudctjavascript.js"></script>
+</body>
+</html>
